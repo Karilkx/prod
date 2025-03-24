@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 15%;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button:first-of-type {
+    background-color: red;
+    color: white;
+}
+
+button:last-of-type {
+    background-color: green;
+    color: white;
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.8;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
